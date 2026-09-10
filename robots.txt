@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /assets/tmp/
+
+User-agent: GPTBot
+Allow: /
+
+Sitemap: https://www.hengzhip.com/sitemap.xml
+Host: https://www.hengzhip.com
