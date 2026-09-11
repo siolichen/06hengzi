@@ -36,6 +36,7 @@
   @keyframes hzDrift { 0% { transform: translate3d(0,0,0); } 100% { transform: translate3d(-40px,0,0); } }
   @keyframes hzRise { 0% { opacity: 0; transform: translate3d(0,34px,0); } 100% { opacity: 1; transform: none; } }
 
+  *, *::before, *::after { box-sizing: border-box; }
   h1, h2, h3, p, li { overflow-wrap: break-word; }
   @media (max-width: 900px) {
     h1, h2, h3, p { max-width: 100% !important; }
@@ -50,6 +51,9 @@
     [data-reveal="law"] > img { width: 150px !important; order: 0 !important; }
     button[style*="justify-content:space-between"] { gap: 12px !important; }
     section div[style*="clamp(20px,6vw,88px)"], section div[style*="clamp(20px,6vw,80px)"], section div[style*="clamp(16px,4vw,56px)"] { padding-left: 0 !important; padding-right: 0 !important; }
+    [data-flow] > p[style*="padding"], [data-flow] > p[style*="background"], [data-flow] > p[style*="border-left"] { display: block !important; margin: 20px 0 !important; }
+    [data-reveal="stage"] > div:first-child { flex: 0 0 100% !important; }
+    input, textarea, select { max-width: 100% !important; }
   }
 </style>
 <script type="application/ld+json">
@@ -278,7 +282,7 @@
           <div style="display:flex; align-items:baseline; gap:14px; font-size:clamp(16px,1.9vw,19px); line-height:1.7"><span style="color:#C9E43B">—</span><span>有限的預算應該先放在哪裡？</span></div>
         </div>
         <p style="margin:28px 0 0; font-size:15px; line-height:1.8; color:rgba(252,253,252,.78)">衡知依照品牌實際的市場計畫，協助安排更適合現階段的智財布局。</p>
-        <a href="booking.html" style="display:inline-flex; align-items:center; height:54px; margin-top:28px; padding:0 32px; background:#C9E43B; color:#202625; font-size:15px; letter-spacing:.06em; border-radius:999px" style-hover="background:#FCFDFC">規劃跨國智財布局 →</a>
+        <a href="booking.html" style="display:inline-flex; align-items:center; height:54px; margin-top:28px; padding:0 32px; background:#C9E43B; color:#202625; font-size:15px; letter-spacing:.06em; border-radius:999px" style-hover="background:#FCFDFC">預約智財布局諮詢 →</a>
       </div>
     </div>
   </div>
@@ -505,7 +509,7 @@
     <div style="display:grid; gap:16px; font-size:16px; line-height:1.95; color:rgba(252,253,252,.86)">
       <p style="margin:0">不確定該申請什麼沒有關係。告訴我們你的品牌、產品，以及下一步準備往哪裡走。</p>
       <p style="margin:0">從第一次討論開始，把複雜的智財問題整理成可以做的決定。</p>
-      <a href="mailto:contact@hengzhip.com" style="justify-self:start; display:inline-flex; align-items:center; height:56px; margin-top:12px; padding:0 34px; background:#C9E43B; color:#202625; font-size:16px; font-weight:500; letter-spacing:.06em; border-radius:999px" style-hover="background:#FCFDFC; color:#202625">預約智財布局諮詢 →</a>
+      <a href="booking.html" style="justify-self:start; display:inline-flex; align-items:center; height:56px; margin-top:12px; padding:0 34px; background:#C9E43B; color:#202625; font-size:16px; font-weight:500; letter-spacing:.06em; border-radius:999px" style-hover="background:#FCFDFC; color:#202625">預約智財布局諮詢 →</a>
     </div>
   </div>
 </section>

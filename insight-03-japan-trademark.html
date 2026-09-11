@@ -31,6 +31,7 @@
   * { box-sizing: border-box; }
   @keyframes hzRise { 0% { opacity: 0; transform: translate3d(0,26px,0); } 100% { opacity: 1; transform: none; } }
 
+  *, *::before, *::after { box-sizing: border-box; }
   h1, h2, h3, p, li { overflow-wrap: break-word; }
   @media (max-width: 900px) {
     h1, h2, h3, p { max-width: 100% !important; }
@@ -45,6 +46,9 @@
     [data-reveal="law"] > img { width: 150px !important; order: 0 !important; }
     button[style*="justify-content:space-between"] { gap: 12px !important; }
     section div[style*="clamp(20px,6vw,88px)"], section div[style*="clamp(20px,6vw,80px)"], section div[style*="clamp(16px,4vw,56px)"] { padding-left: 0 !important; padding-right: 0 !important; }
+    [data-flow] > p[style*="padding"], [data-flow] > p[style*="background"], [data-flow] > p[style*="border-left"] { display: block !important; margin: 20px 0 !important; }
+    [data-reveal="stage"] > div:first-child { flex: 0 0 100% !important; }
+    input, textarea, select { max-width: 100% !important; }
   }
 </style>
 <script type="application/ld+json">

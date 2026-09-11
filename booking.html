@@ -35,6 +35,7 @@
   ::placeholder { color: #9AA3A1; }
   @keyframes hzRise { 0% { opacity: 0; transform: translate3d(0,26px,0); } 100% { opacity: 1; transform: none; } }
 
+  *, *::before, *::after { box-sizing: border-box; }
   h1, h2, h3, p, li { overflow-wrap: break-word; }
   @media (max-width: 900px) {
     h1, h2, h3, p { max-width: 100% !important; }
@@ -49,6 +50,9 @@
     [data-reveal="law"] > img { width: 150px !important; order: 0 !important; }
     button[style*="justify-content:space-between"] { gap: 12px !important; }
     section div[style*="clamp(20px,6vw,88px)"], section div[style*="clamp(20px,6vw,80px)"], section div[style*="clamp(16px,4vw,56px)"] { padding-left: 0 !important; padding-right: 0 !important; }
+    [data-flow] > p[style*="padding"], [data-flow] > p[style*="background"], [data-flow] > p[style*="border-left"] { display: block !important; margin: 20px 0 !important; }
+    [data-reveal="stage"] > div:first-child { flex: 0 0 100% !important; }
+    input, textarea, select { max-width: 100% !important; }
   }
 </style>
 <script type="application/ld+json">
@@ -135,7 +139,7 @@
           </label>
         </div>
         <div style="display:grid; gap:12px">
-          <span style="font-size:14.5px; font-weight:700; color:#202625">方便聯絡方式 <span style="color:#C25A4B">*</span></span>
+          <span style="font-size:14.5px; font-weight:700; color:#202625; white-space:nowrap">方便聯絡方式 <span style="color:#C25A4B">*</span></span>
           <div style="display:flex; flex-wrap:wrap; gap:12px">
             <label style="display:inline-flex; align-items:center; gap:10px; min-height:44px; padding:0 18px; background:#F3F6F5; border:1px solid #CFDEDA; font-size:15px; cursor:pointer"><input type="radio" name="channel" value="phone" required /><span>電話</span></label>
             <label style="display:inline-flex; align-items:center; gap:10px; min-height:44px; padding:0 18px; background:#F3F6F5; border:1px solid #CFDEDA; font-size:15px; cursor:pointer"><input type="radio" name="channel" value="email" /><span>Email</span></label>
