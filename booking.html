@@ -25,7 +25,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
   html { scroll-behavior: smooth; overflow-x: clip; }
-  body { margin: 0; background: #FCFDFC; color: #202625; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased; text-wrap: pretty; }
+  body { margin: 0; background: #FCFDFC; color: #202625; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased; }
   a { color: #087F78; text-decoration: none; }
   a:hover { color: #0AA79E; }
   * { box-sizing: border-box; }
@@ -35,9 +35,8 @@
   ::placeholder { color: #9AA3A1; }
   @keyframes hzRise { 0% { opacity: 0; transform: translate3d(0,26px,0); } 100% { opacity: 1; transform: none; } }
 
-  h1, h2, h3, p, li { line-break: strict; overflow-wrap: break-word; text-wrap: pretty; }
+  h1, h2, h3, p, li { overflow-wrap: break-word; }
   @media (max-width: 900px) {
-    h1 br, h2 br, h3 br, p br { display: none; }
     h1, h2, h3, p { max-width: 100% !important; }
     [style*="max-width:max(80%"], [style*="max-width:min(max(80%"], [style*="max-width:min(80%"] { max-width: 100% !important; }
     section, article { padding-left: 6vw !important; padding-right: 6vw !important; }
