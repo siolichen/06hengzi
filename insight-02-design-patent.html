@@ -36,8 +36,11 @@
     h1 br, h2 br, h3 br, p br { display: none; }
     h1, h2, h3, p { max-width: 100% !important; }
     [style*="max-width:max(80%"], [style*="max-width:min(max(80%"], [style*="max-width:min(80%"] { max-width: 100% !important; }
-    section, article { padding-left: 10vw !important; padding-right: 10vw !important; }
+    section, article { padding-left: 6vw !important; padding-right: 6vw !important; }
     section section, section article, article section, article article { padding-left: 0 !important; padding-right: 0 !important; }
+    [data-flow] { display: block !important; }
+    [data-flow] > p { display: inline; }
+    [data-flow] > p + p::before { content: ""; }
   }
 </style>
 <script type="application/ld+json">
@@ -120,7 +123,7 @@
 
     <section data-reveal="p" style="display:grid; gap:20px">
       <h2 style="margin:0; font-size:clamp(21px,2.6vw,30px); line-height:1.5; font-weight:700; color:#087F78">好看的外型，不會因為是你設計的就自動取得「設計專利」</h2>
-      <div style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
+      <div data-flow="1" style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
         <p style="margin:0">台灣的專利制度包含發明、新型及設計三種類型。</p>
         <p style="margin:0">其中「設計專利」保護的核心，是對物品全部或部分之形狀、花紋、色彩或其結合，透過視覺訴求所產生的創作。</p>
         <p style="margin:0">但要取得設計專利保護，需要依法提出申請並取得專利權。</p>
@@ -132,7 +135,7 @@
 
     <section data-reveal="p" style="display:grid; gap:20px">
       <h2 style="margin:0; font-size:clamp(21px,2.6vw,30px); line-height:1.5; font-weight:700; color:#087F78">設計品牌更該在產品公開以前想這件事</h2>
-      <div style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
+      <div data-flow="1" style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
         <p style="margin:0">很多人處理智財的順序是：</p>
         <div style="display:grid; gap:10px; padding-left:22px; border-left:2px solid #CFDEDA; color:#202625">
           <span>產品設計完成</span>
@@ -151,7 +154,7 @@
 
     <section data-reveal="p" style="display:grid; gap:20px">
       <h2 style="margin:0; font-size:clamp(21px,2.6vw,30px); line-height:1.5; font-weight:700; color:#087F78">商標、設計專利、著作權，不是在三選一</h2>
-      <div style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
+      <div data-flow="1" style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
         <p style="margin:0">一件產品可能同時存在不同類型的智財。</p>
         <p style="margin:0">例如：</p>
         <div style="display:grid; gap:12px">
@@ -168,7 +171,7 @@
 
     <section data-reveal="p" style="display:grid; gap:20px">
       <h2 style="margin:0; font-size:clamp(21px,2.6vw,30px); line-height:1.5; font-weight:700; color:#087F78">好設計值得被看見，也值得提早保護</h2>
-      <div style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
+      <div data-flow="1" style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
         <p style="margin:0">如果你的產品靠獨特外型、設計細節或視覺辨識度在市場上建立差異，</p>
         <p style="margin:0">不要等到相似商品出現後，才第一次研究智財。</p>
         <p style="margin:0">在產品正式公開與進入市場以前，先把可能的保護方式弄清楚，往往比事後補救更有空間。</p>

@@ -36,8 +36,11 @@
     h1 br, h2 br, h3 br, p br { display: none; }
     h1, h2, h3, p { max-width: 100% !important; }
     [style*="max-width:max(80%"], [style*="max-width:min(max(80%"], [style*="max-width:min(80%"] { max-width: 100% !important; }
-    section, article { padding-left: 10vw !important; padding-right: 10vw !important; }
+    section, article { padding-left: 6vw !important; padding-right: 6vw !important; }
     section section, section article, article section, article article { padding-left: 0 !important; padding-right: 0 !important; }
+    [data-flow] { display: block !important; }
+    [data-flow] > p { display: inline; }
+    [data-flow] > p + p::before { content: ""; }
   }
 </style>
 <script type="application/ld+json">
@@ -122,7 +125,7 @@
 
     <section data-reveal="p" style="display:grid; gap:20px">
       <h2 style="margin:0; font-size:clamp(21px,2.6vw,30px); line-height:1.5; font-weight:700; color:#087F78">商標有「地域性」</h2>
-      <div style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
+      <div data-flow="1" style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
         <p style="margin:0">商標權原則上是在取得權利的國家或地區受到保護。</p>
         <p style="margin:0">所以：</p>
         <div style="display:grid; gap:8px; padding:22px 26px; background:#F3F6F5; border-left:3px solid #C9E43B; line-height:1.7">
@@ -137,7 +140,7 @@
 
     <section data-reveal="p" style="display:grid; gap:20px">
       <h2 style="margin:0; font-size:clamp(21px,2.6vw,30px); line-height:1.5; font-weight:700; color:#087F78">不要等到商品上架，才第一次搜尋自己的品牌</h2>
-      <div style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
+      <div data-flow="1" style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
         <p style="margin:0">進入新市場以前，有一件事情值得提早做：</p>
         <p style="margin:0; padding:22px 26px; background:#DDF2EE; border-left:3px solid #087F78; font-weight:700; color:#087F78; line-height:1.8">確認當地是否已經存在相同或近似的在先商標。</p>
         <p style="margin:0">因為最麻煩的情況不是「忘了申請」。</p>
@@ -149,7 +152,7 @@
 
     <section data-reveal="p" style="display:grid; gap:20px">
       <h2 style="margin:0; font-size:clamp(21px,2.6vw,30px); line-height:1.5; font-weight:700; color:#087F78">那是不是每個國家都要立刻申請？</h2>
-      <div style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
+      <div data-flow="1" style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
         <p style="margin:0">也不是。</p>
         <p style="margin:0">如果未來想進十個市場，不代表現在一定要十個國家全部一起處理。</p>
         <p style="margin:0">真正需要考慮的是：</p>
@@ -166,7 +169,7 @@
 
     <section data-reveal="p" style="display:grid; gap:20px">
       <h2 style="margin:0; font-size:clamp(21px,2.6vw,30px); line-height:1.5; font-weight:700; color:#087F78">商品準備出海，智財最好早一步出發</h2>
-      <div style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
+      <div data-flow="1" style="display:grid; gap:20px; font-size:clamp(16px,1.8vw,18px); line-height:1.95; color:#3A4241">
         <p style="margin:0">很多品牌拓展海外市場時，會先想到物流、金流、語言、通路和行銷。</p>
         <p style="margin:0">智財卻常常被排在最後。</p>
         <p style="margin:0">但當一個品牌準備從台灣走向海外，真正要帶出去的不只是商品。</p>
